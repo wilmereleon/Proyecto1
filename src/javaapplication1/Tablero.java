@@ -15,6 +15,8 @@ public class Tablero {
    
   private Tablero tablero; // El modelo del tablero
   private int nivel; // El nivel del tablero
+  private int numero = 1;
+  private Tarjeta[] tarjetas;
   
   /**
     * @author Wílmer E. Léon
@@ -74,8 +76,7 @@ public class Tablero {
   // 
     
     
-  private int numero = 1;
-  private Tarjeta[] tarjetas;
+
   
   //
   // Constructors
