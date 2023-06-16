@@ -91,10 +91,10 @@ public class FXMLDocumentController implements Initializable {
 
     /**
     * Set the value of jugador
-    * @param newVar the new value of jugador
+    * @param jugador the new value of jugador
     */
-    public void setJugador (Jugador newVar) {
-        jugador = newVar;
+    public void setJugador (Jugador jugador) {
+        jugador = jugador;
     }
 
     /**
@@ -109,8 +109,8 @@ public class FXMLDocumentController implements Initializable {
     * Set the value of tableros
     * @param newVar the new value of tableros
     */
-    public void setTableros (Tablero[] newVar) {
-        tableros = newVar;
+    public void setTableros (Tablero[] tablero) {
+        tableros = tablero;
     }
 
     /**
@@ -125,8 +125,8 @@ public class FXMLDocumentController implements Initializable {
     * Set the value of tableroActual
     * @param newVar the new value of tableroActual
     */
-    public void setTableroActual (Tablero newVar) {
-        tableroActual = newVar;
+    public void setTableroActual (Tablero tablero) {
+        tableroActual = tablero;
     }
 
     /**
@@ -154,7 +154,7 @@ public class FXMLDocumentController implements Initializable {
 
 
     /**
-    * @param        tema
+    * @param tema
     */
     public void seleccionarTema (int tema){
     }
@@ -173,6 +173,8 @@ public class FXMLDocumentController implements Initializable {
     * @param Tarjeta
     */
     public boolean compararTarjetas (Tarjeta tarjeta1, Tarjeta tarjeta2) {
+        
+        // Poner lógica del juego
         return false; 
     }
 

@@ -36,10 +36,10 @@ public class Tarjeta {
 
   /**
    * Set the value of tema
-   * @param newVar the new value of tema
+   * @param tema the new value of tema
    */
-  public void setTema (int newVar) {
-    tema = newVar;
+  public void setTema (int tema) {
+    tema = tema;
   }
 
   /**
@@ -52,10 +52,10 @@ public class Tarjeta {
 
   /**
    * Set the value of imagen
-   * @param newVar the new value of imagen
+   * @param imagen the new value of imagen
    */
-  public void setImagen (String newVar) {
-    imagen = newVar;
+  public void setImagen (String imagen) {
+    imagen = imagen;
   }
 
   /**
@@ -68,9 +68,13 @@ public class Tarjeta {
 
   /**
    * Set the value of estadoDeTarjeta
-   * @param newVar the new value of estadoDeTarjeta
+   * @param oculta visible acertada the new value of estadoDeTarjeta
    */
   public void setEstadoDeTarjeta (int oculta, int visible, int acertada) {
+   /**
+   * @autor: Wílmer E. León
+   * Comentario: poner código de estados
+   */
     estadoDeTarjeta = visible;
   }
 
@@ -91,6 +95,10 @@ public class Tarjeta {
    * @param imagen
    */
   public void Tarjeta (int estadoDeTarjeta, String imagen) {
+      /**
+   * @autor: Wílmer E. León
+   * Comentario: poner código de Tarjeta
+   */
   }
 
 
@@ -111,7 +119,7 @@ public class Tarjeta {
 
 
   /**
-   * @return       int
+   * @return int
    */
   public int getEstadoDeTarjeta (int tema) {
       return tema;
