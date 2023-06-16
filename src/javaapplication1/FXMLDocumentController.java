@@ -42,165 +42,164 @@ public class FXMLDocumentController implements Initializable {
     }   
     
     //
-  // Constructors
-  //
-  public FXMLDocumentController (){
+    // Constructors
+    //
+    public FXMLDocumentController (){
   
-  }
+    }
   
-  //
-  // Methods
-  //
+    //
+    // Methods
+    //
 
 
-  //
-  // Accessor methods
-  //
+    //
+    // Accessor methods
+    //
 
-  /**
-   * Set the value of modelo
-   * @param newVar the new value of modelo
-   */
-  public void setModelo (Main newVar) {
-    modelo = newVar;
-  }
+    /**
+    * Set the value of modelo
+    * @param newVar the new value of modelo
+    */
+    public void setModelo (Main newVar) {
+        modelo = newVar;
+    }
 
-  /**
-   * Get the value of modelo
-   * @return the value of modelo
-   */
-  public Main getModelo () {
-    return modelo;
-  }
+    /**
+    * Get the value of modelo
+    * @return the value of modelo
+    */
+    public Main getModelo () {
+        return modelo;
+    }
 
-  /**
-   * Set the value of vista
-   * @param newVar the new value of vista
-   */
-  public void setVista (JavaApplication1 newVar) {
-    vista = newVar;
-  }
+    /**
+    * Set the value of vista
+    * @param newVar the new value of vista
+    */
+    public void setVista (JavaApplication1 newVar) {
+        vista = newVar;
+    }
 
-  /**
-   * Get the value of vista
-   * @return the value of vista
-   */
-  public JavaApplication1 getVista () {
-    return vista;
-  }
+    /**
+    * Get the value of vista
+    * @return the value of vista
+    */
+    public JavaApplication1 getVista () {
+        return vista;
+    }
 
-  /**
-   * Set the value of jugador
-   * @param newVar the new value of jugador
-   */
-  public void setJugador (Jugador newVar) {
-    jugador = newVar;
-  }
+    /**
+    * Set the value of jugador
+    * @param newVar the new value of jugador
+    */
+    public void setJugador (Jugador newVar) {
+        jugador = newVar;
+    }
 
-  /**
-   * Get the value of jugador
-   * @return the value of jugador
-   */
-  public Jugador getJugador () {
-    return jugador;
-  }
+    /**
+    * Get the value of jugador
+    * @return the value of jugador
+    */
+    public Jugador getJugador () {
+        return jugador;
+    }
 
-  /**
-   * Set the value of tableros
-   * @param newVar the new value of tableros
-   */
-  public void setTableros (Tablero[] newVar) {
-    tableros = newVar;
-  }
+    /**
+    * Set the value of tableros
+    * @param newVar the new value of tableros
+    */
+    public void setTableros (Tablero[] newVar) {
+        tableros = newVar;
+    }
 
-  /**
-   * Get the value of tableros
-   * @return the value of tableros
-   */
-  public Tablero[] getTableros () {
-    return tableros;
-  }
+    /**
+    * Get the value of tableros
+    * @return the value of tableros
+    */
+    public Tablero[] getTableros () {
+        return tableros;
+    }
 
-  /**
-   * Set the value of tableroActual
-   * @param newVar the new value of tableroActual
-   */
-  public void setTableroActual (Tablero newVar) {
-    tableroActual = newVar;
-  }
+    /**
+    * Set the value of tableroActual
+    * @param newVar the new value of tableroActual
+    */
+    public void setTableroActual (Tablero newVar) {
+        tableroActual = newVar;
+    }
 
-  /**
-   * Get the value of tableroActual
-   * @return the value of tableroActual
-   */
-  public Tablero getTableroActual () {
-    return tableroActual;
-  }
+    /**
+    * Get the value of tableroActual
+    * @return the value of tableroActual
+    */
+    public Tablero getTableroActual () {
+        return tableroActual;
+    }
 
-  //
-  // Other methods
-  //
+    //
+    // Other methods
+    //
 
-  /**
-   */
-  public void FXMLDocumentController () {
-  }
-
-
-  /**
-   */
-  public void iniciarJuego () {
-  }
+    /**
+    */
+    public void FXMLDocumentController () {
+    }
 
 
-  /**
-   * @param        tema
-   */
-  public void seleccionarTema (int tema){
-  }
+    /**
+    */
+    public void iniciarJuego () {
+    }
 
 
-  /**
-   * @param Tarjeta
-   */
-  public void seleccionarTarjeta (Tarjeta tema){
-      
-  }
+    /**
+    * @param        tema
+    */
+    public void seleccionarTema (int tema){
+    }
 
 
-  /**
-   * @param tarjeta1
-   * @return boolean
-   * @param Tarjeta
-   */
-  public boolean compararTarjetas (Tarjeta tarjeta1, Tarjeta tarjeta2) {
+    /**
+    * @param Tarjeta
+    */
+    public void seleccionarTarjeta (Tarjeta tema){
+    }
+
+
+    /**
+    * @param tarjeta1
+    * @return boolean
+    * @param Tarjeta
+    */
+    public boolean compararTarjetas (Tarjeta tarjeta1, Tarjeta tarjeta2) {
         return false; 
-  }
+    }
 
 
-  /**
-   * @param puntaje
-   */
-  public void actualizarPuntaje (boolean puntaje) {
-  }
+    /**
+    * @param puntaje
+    */
+    public void actualizarPuntaje (boolean puntaje) {
+    }
 
 
-  /**
-   * @param puntaje
-   */
-  public void actualizarVidas (boolean puntaje) {
-  }
+    /**
+    * @param puntaje
+    */
+    public void actualizarVidas (boolean puntaje) {
+    }
 
 
-  /**
-   */
-  public void cambiarTablero () {
-  }
+    /**
+    */
+    public void cambiarTablero () {
+    }
 
 
-  /**
-   */
-  public void terminarJuego (){
-  } 
+    /**
+    */
+    public void terminarJuego (){
+    } 
     
 }

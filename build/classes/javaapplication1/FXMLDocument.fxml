@@ -15,7 +15,7 @@
    <children>
       <ImageView fitHeight="314.0" fitWidth="592.0" layoutX="4.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../OneDrive%20-%20Politécnico%20Grancolombiano/Ingesoft/Paradigmas%20de%20Programación/Enunciado%20de%20entregas/Enunciado%20de%20entrega%20grupal%201/Insumos%20de%20actividad%20y%20entregables/Insumos%20y%20actividades%20de%20entrega/Foro-PP03-G2/img/BackgroundJuego.png" />
+            <Image url="Img/BackgroundJuego.png" />
          </image>
       </ImageView>
       <Button id="clic" layoutX="261.0" layoutY="126.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="78.0" text="PLAY" />
