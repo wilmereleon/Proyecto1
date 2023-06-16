@@ -9,10 +9,9 @@ package javaapplication1;
  * @author Wílmer E. León
  */
 public class Jugador {
-    //
+  //
   // Fields
   //
-
   private String nombre;
   
   //

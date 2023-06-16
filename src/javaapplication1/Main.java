@@ -9,10 +9,9 @@ package javaapplication1;
  * @author Wilme
  */
 public class Main {
-    //
+  //
   // Fields
   //
-
   private int puntaje;
   private int vidas;
   
