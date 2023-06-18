@@ -32,10 +32,10 @@ public class Main {
 
   /**
    * Set the value of puntaje
-   * @param newVar the new value of puntaje
+   * @param puntaje the new value of puntaje
    */
-  public void setPuntaje (int newVar) {
-    puntaje = newVar;
+  public void setPuntaje (int puntaje) {
+    puntaje = puntaje;
   }
 
   /**
@@ -48,10 +48,10 @@ public class Main {
 
   /**
    * Set the value of vidas
-   * @param newVar the new value of vidas
+   * @param vidas the new value of vidas
    */
-  public void setVidas (int newVar) {
-    vidas = newVar;
+  public void setVidas (int vidas) {
+    vidas = vidas;
   }
 
   /**
