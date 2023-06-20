@@ -3,7 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
 package javaapplication1;
-
+/**
+ *
+ * @author Wílmer E. León
+ */
 import java.awt.Label;
 import java.awt.event.ActionEvent;
 import java.net.URL;
