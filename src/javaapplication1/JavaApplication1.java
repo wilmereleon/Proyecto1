@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Wilme
+ * @author Wílmer E. León
  */
 public class JavaApplication1 extends Application {
 

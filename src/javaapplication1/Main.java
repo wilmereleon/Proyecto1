@@ -6,7 +6,7 @@ package javaapplication1;
 
 /**
  *
- * @author Wilme
+ * @author Wílmer E. León
  */
 public class Main {
   //
