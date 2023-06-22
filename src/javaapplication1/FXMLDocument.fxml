@@ -18,7 +18,10 @@
             <Image url="@../Img/Background.jpeg" />
          </image>
       </ImageView>
-      <Button id="clic" layoutX="261.0" layoutY="126.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="78.0" text="PLAY" />
+      <Button id="botonPlay" fx:id="btnBotonPlay" layoutX="261.0" layoutY="126.0" mnemonicParsing="false" onAction="#cambiarTablero" prefHeight="41.0" prefWidth="78.0" text="PLAY">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
       <Text fill="#a89797" layoutX="67.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAESTRO DE LA MEMORIA" wrappingWidth="470.986328125">
          <font>
             <Font name="Bookman Old Style" size="33.0" />
