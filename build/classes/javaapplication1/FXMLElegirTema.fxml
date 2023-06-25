@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.URL?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="304.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="javaapplication1.FXMLElegirTemaController">
+<AnchorPane id="AnchorPane" prefHeight="304.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication1.FXMLElegirTemaController">
     <stylesheets>
         <URL value="@fxmlelegirtema.css" />
     </stylesheets>
@@ -32,15 +33,7 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <Text fill="#d0b7b7" layoutX="157.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ESPACIO">
-         <font>
-            <Font size="17.0" />
-         </font>
-      </Text>
-      <Text fill="#d0b7b7" layoutX="357.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TECNOLOGÍA">
-         <font>
-            <Font size="17.0" />
-         </font>
-      </Text>
+      <Button fx:id="btnEsp" layoutX="160.0" layoutY="232.0" mnemonicParsing="false" onAction="#cambioEspacio" text="Espacio" />
+      <Button fx:id="btnTec" layoutX="371.0" layoutY="232.0" mnemonicParsing="false" onAction="#cambioTecnologia" text="Tecnología" />
    </children>
 </AnchorPane>

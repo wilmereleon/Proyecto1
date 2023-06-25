@@ -34,6 +34,7 @@ public class JavaApplication1 extends Application {
         stage.setTitle("Maestro de la memoria: une parejas con tarjetas");
         stage.setScene(scene);
         stage.show();
+
     }
     
 }

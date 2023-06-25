@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="348.0" prefWidth="701.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="javaapplication1.FXMLTemaEspacioController">
+   <children>
+      <ImageView fitHeight="397.0" fitWidth="675.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/BackgroundJuego.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="86.0" layoutX="219.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/cartaTemaEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="86.0" layoutX="385.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/cartaTemaEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="86.0" layoutX="84.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/cartaTemaEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="86.0" layoutX="527.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/cartaTemaEspacio.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="177.0" layoutY="261.0" prefHeight="58.0" prefWidth="346.0" text="Escoge los pares de tarjetas" textFill="#f5f3f3">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
