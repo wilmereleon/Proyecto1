@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="JavaApplication1">
+  <ClassDiagramComponents>
+    <Class name="FXMLDocumentController" package="javaapplication1" visibility="public" xPosition="33.0" yPosition="246.0">
+      <Fields>
+        <Field name="modelo" type="Main" visibility="private"/>
+        <Field name="vista" type="JavaApplication1" visibility="private"/>
+        <Field name="jugador" type="Jugador" visibility="private"/>
+        <Field name="tableros" type="Tablero[]" visibility="private"/>
+        <Field name="tableroActual" type="Tablero" visibility="private"/>
+        <Field name="label" type="Label" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="handleButtonAction" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="initialize" returnType="void" visibility="public">
+          <Argument type="URL" name="url"/>
+          <Argument type="ResourceBundle" name="rb"/>
+        </Method>
+        <Method name="setModelo" returnType="void" visibility="public">
+          <Argument type="Main" name="newVar"/>
+        </Method>
+        <Method name="getModelo" returnType="Main" visibility="public"/>
+        <Method name="setVista" returnType="void" visibility="public">
+          <Argument type="JavaApplication1" name="newVar"/>
+        </Method>
+        <Method name="getVista" returnType="JavaApplication1" visibility="public"/>
+        <Method name="setJugador" returnType="void" visibility="public">
+          <Argument type="Jugador" name="jugador"/>
+        </Method>
+        <Method name="getJugador" returnType="Jugador" visibility="public"/>
+        <Method name="setTableros" returnType="void" visibility="public">
+          <Argument type="Tablero[]" name="tablero"/>
+        </Method>
+        <Method name="getTableros" returnType="Tablero[]" visibility="public"/>
+        <Method name="setTableroActual" returnType="void" visibility="public">
+          <Argument type="Tablero" name="tablero"/>
+        </Method>
+        <Method name="getTableroActual" returnType="Tablero" visibility="public"/>
+        <Method name="FXMLDocumentController" returnType="void" visibility="public"/>
+        <Method name="iniciarJuego" returnType="void" visibility="public"/>
+        <Method name="seleccionarTema" returnType="void" visibility="public">
+          <Argument type="int" name="tema"/>
+        </Method>
+        <Method name="seleccionarTarjeta" returnType="void" visibility="public">
+          <Argument type="Tarjeta" name="tema"/>
+        </Method>
+        <Method name="compararTarjetas" returnType="boolean" visibility="public">
+          <Argument type="Tarjeta" name="tarjeta1"/>
+          <Argument type="Tarjeta" name="tarjeta2"/>
+        </Method>
+        <Method name="actualizarPuntaje" returnType="void" visibility="public">
+          <Argument type="boolean" name="puntaje"/>
+        </Method>
+        <Method name="actualizarVidas" returnType="void" visibility="public">
+          <Argument type="boolean" name="puntaje"/>
+        </Method>
+        <Method name="cambiarTablero" returnType="void" visibility="public"/>
+        <Method name="terminarJuego" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="JavaApplication1" package="javaapplication1" visibility="public" xPosition="357.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="start" returnType="void" visibility="public">
+          <Argument type="Stage" name="stage"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Jugador" package="javaapplication1" visibility="public" xPosition="630.0" yPosition="5.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="newVar"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="Jugador" returnType="void" visibility="public">
+          <Argument type="String" name="jugador"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Main" package="javaapplication1" visibility="public" xPosition="887.0" yPosition="77.0">
+      <Fields>
+        <Field name="puntaje" type="int" visibility="private"/>
+        <Field name="vidas" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setPuntaje" returnType="void" visibility="public">
+          <Argument type="int" name="puntaje"/>
+        </Method>
+        <Method name="getPuntaje" returnType="int" visibility="public"/>
+        <Method name="setVidas" returnType="void" visibility="public">
+          <Argument type="int" name="vidas"/>
+        </Method>
+        <Method name="getVidas" returnType="int" visibility="public"/>
+        <Method name="Main" returnType="void" visibility="public"/>
+        <Method name="setVidas" returnType="void" visibility="public"/>
+        <Method name="getVidas" returnType="int" visibility="public">
+          <Argument type="int" name="vidas"/>
+        </Method>
+        <Method name="setPuntaje" returnType="void" visibility="public"/>
+        <Method name="getPuntaje" returnType="int" visibility="public">
+          <Argument type="int" name="puntaje"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Tablero" package="javaapplication1" visibility="public" xPosition="1144.0" yPosition="294.0">
+      <Fields>
+        <Field name="tablero" type="Tablero" visibility="private"/>
+        <Field name="nivel" type="int" visibility="private"/>
+        <Field name="numero" type="int" visibility="private"/>
+        <Field name="tarjetas" type="Tarjeta[]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="int" name="numero"/>
+        </Method>
+        <Method name="getNumero" returnType="int" visibility="public">
+          <Argument type="int" name="numero"/>
+        </Method>
+        <Method name="setTarjetas" returnType="void" visibility="public"/>
+        <Method name="getTarjetas" returnType="Tarjeta[]" visibility="public">
+          <Argument type="Tarjeta[]" name="tarjetas"/>
+        </Method>
+        <Method name="Tablero" returnType="void" visibility="public">
+          <Argument type="int" name="numero"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Tarjeta" package="javaapplication1" visibility="public" xPosition="1468.0" yPosition="294.0">
+      <Fields>
+        <Field name="boton" type="Button" visibility="private"/>
+        <Field name="sonido" type="AudioClip" visibility="private"/>
+        <Field name="pareja" type="int" visibility="private"/>
+        <Field name="tema" type="int" visibility="private"/>
+        <Field name="imagen" type="String" visibility="private"/>
+        <Field name="oculta" type="int" visibility="private"/>
+        <Field name="visible" type="int" visibility="private"/>
+        <Field name="acertada" type="int" visibility="private"/>
+        <Field name="estadoDeTarjeta" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="AudioClip" name="sonido"/>
+          <Argument type="int" name="pareja"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getBoton" returnType="Button" visibility="public"/>
+        <Method name="getSonido" returnType="AudioClip" visibility="public"/>
+        <Method name="hide" returnType="void" visibility="public"/>
+        <Method name="isShown" returnType="boolean" visibility="public"/>
+        <Method name="setTema" returnType="void" visibility="public">
+          <Argument type="int" name="tema"/>
+        </Method>
+        <Method name="getTema" returnType="int" visibility="public"/>
+        <Method name="getPareja" returnType="int" visibility="public"/>
+        <Method name="setImagen" returnType="void" visibility="public">
+          <Argument type="String" name="imagen"/>
+        </Method>
+        <Method name="getImagen" returnType="String" visibility="public"/>
+        <Method name="setEstadoDeTarjeta" returnType="void" visibility="public">
+          <Argument type="int" name="oculta"/>
+          <Argument type="int" name="visible"/>
+          <Argument type="int" name="acertada"/>
+        </Method>
+        <Method name="getEstadoDeTarjeta" returnType="int" visibility="public"/>
+        <Method name="Tarjeta" returnType="void" visibility="public">
+          <Argument type="int" name="estadoDeTarjeta"/>
+          <Argument type="String" name="imagen"/>
+        </Method>
+        <Method name="getTema" returnType="int" visibility="public">
+          <Argument type="int" name="tema"/>
+        </Method>
+        <Method name="getImagen" returnType="String" visibility="public">
+          <Argument type="String" name="imagen"/>
+        </Method>
+        <Method name="getEstadoDeTarjeta" returnType="int" visibility="public">
+          <Argument type="int" name="tema"/>
+        </Method>
+        <Method name="setEstadoDeTarjeta" returnType="void" visibility="public">
+          <Argument type="int" name="tema"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="javaapplication1.FXMLDocumentController" target="javaapplication1.Tarjeta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="javaapplication1.FXMLDocumentController" target="javaapplication1.Main" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tableroActual" source="javaapplication1.FXMLDocumentController" target="javaapplication1.Tablero" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="jugador" source="javaapplication1.FXMLDocumentController" target="javaapplication1.Jugador" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="javaapplication1.FXMLDocumentController" target="javaapplication1.JavaApplication1" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="vista" source="javaapplication1.FXMLDocumentController" target="javaapplication1.JavaApplication1" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="javaapplication1.FXMLDocumentController" target="javaapplication1.Tablero" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tablero" source="javaapplication1.Tablero" target="javaapplication1.Tablero" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="modelo" source="javaapplication1.FXMLDocumentController" target="javaapplication1.Main" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="javaapplication1.FXMLDocumentController" target="javaapplication1.Jugador" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="javaapplication1.Tablero" target="javaapplication1.Tarjeta" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
