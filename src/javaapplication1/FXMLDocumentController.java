@@ -21,12 +21,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-
 /**
  * FXML Controller class
  *
  * @author Wílmer E. León
  */
+
 public class FXMLDocumentController implements Initializable {
     
     private Main modelo;
@@ -40,21 +40,24 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private Button btnBotonPlay;
-    
+     
     @FXML
     private void handleButtonAction(ActionEvent event) {
+        
         System.out.println("Has clic en este botón");
         label.setText("Que comience el juego");
         
     }
     
+
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }   
+    } 
+   
     
     //
     // Constructors
@@ -210,7 +213,9 @@ public class FXMLDocumentController implements Initializable {
 
     /**
     */
+    @FXML
     public void cambiarTablero () {
+        
         FXMLLoader elegirTema = new FXMLLoader(getClass().getResource("FXMLElegirTema.fxml"));
         
         try {
@@ -234,8 +239,8 @@ public class FXMLDocumentController implements Initializable {
         } catch (IOException ex) {
             //Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
     }
-
 
 
     /**
