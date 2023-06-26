@@ -5,9 +5,9 @@
 package javaapplication1;
 
 /**
- *
- * @author Wílmer E. León
- */
+*
+* @author Wilmer E Leon
+*/
 public class Main {
   //
   // Fields
@@ -31,23 +31,24 @@ public class Main {
   //
 
   /**
-   * Set the value of puntaje
-   * @param puntaje the new value of puntaje
+   * Obtiene el valor de puntaje. «puntaje» se ve reflejado en el tablero.
+   * @param puntaje , el nuevo valor de puntaje.
    */
   public void setPuntaje (int puntaje) {
     puntaje = puntaje;
   }
 
   /**
-   * Get the value of puntaje
-   * @return the value of puntaje
+   * Establece el valor de puntaje.
+   * @return el valor de puntaje.
    */
   public int getPuntaje () {
     return puntaje;
   }
 
   /**
-   * Set the value of vidas
+   * Obtiene el valor de vidas. En este punto, se muestran las vidas en el table-
+   * ro.
    * @param vidas the new value of vidas
    */
   public void setVidas (int vidas) {
@@ -55,9 +56,10 @@ public class Main {
   }
 
   /**
-   * Get the value of vidas
-   * @return the value of vidas
-   */
+  * Establece el valor de vidas. En este instante, se lleva un conteo de las vi-
+  * das.
+  * @return el valor de vidas.
+  */
   public int getVidas () {
     return vidas;
   }
@@ -67,14 +69,15 @@ public class Main {
   //
 
   /**
-   */
+  * Comentario: constructor.
+  */
   public void Main () {
   }
 
 
   /**
-   * @param vidas
-   */
+  * @param vidas
+  */
   public void setVidas () {
       
   }

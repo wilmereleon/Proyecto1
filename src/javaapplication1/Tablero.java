@@ -5,9 +5,9 @@
 package javaapplication1;
 
 /**
- *
- * @author Wílmer E. Léon
- */
+*
+* @author Wilmer E Leon
+*/
 public class Tablero {
   //
   // Fields
@@ -37,33 +37,33 @@ public class Tablero {
   //
 
   /**
-   * Set the value of numero
-   * @param numero the new value of numero
+   * Obtiene el valor de numero.
+   * @param numero , el nuevo valor de numero.
    */
   public void setNumero (int numero) {
     numero = numero;
   }
 
   /**
-   * Get the value of numero
-   * @return the value of numero
-   */
+  * Establece el valor de numero.
+  * @return el valor de numero.
+  */
   public int getNumero (int numero) {
     return numero;
   }
 
   /**
-   * Set the value of tarjetas
-   * @param newVar the new value of tarjetas
-   */
+  * Obtiene el valor de tarjetas.
+  * @param tarjetas , el nuevo valor de tarjetas.
+  */
   public void setTarjetas () {
     
   }
 
   /**
-   * Get the value of tarjetas
-   * @return the value of tarjetas
-   */
+  * Establece el valor de tarjetas.
+  * @return el valor de tarjetas.
+  */
   public Tarjeta[] getTarjetas (Tarjeta [] tarjetas) {
     return tarjetas;
   }
@@ -73,8 +73,8 @@ public class Tablero {
   //
 
   /**
-   * @param numero
-   */
+  * @param numero
+  */
   public void Tablero (int numero) {
     
   }

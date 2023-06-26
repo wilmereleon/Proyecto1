@@ -6,7 +6,7 @@ package javaapplication1;
 
 /**
  *
- * @author Wílmer E. León
+ * @author Wilmer E Leon
  */
 public class Jugador {
   //
@@ -30,16 +30,16 @@ public class Jugador {
   //
 
   /**
-   * Set the value of nombre
-   * @param newVar the new value of nombre
+   * Obtiene el valor de nombre. «Nombre» es el asignado por el jugador.
+   * @param nombre , el nuevo valor de nombre.
    */
-  public void setNombre (String newVar) {
-    nombre = newVar;
+  public void setNombre (String nombre) {
+    nombre = nombre;
   }
 
   /**
-   * Get the value of nombre
-   * @return the value of nombre
+   * Establece el valor de nombre.
+   * @return el valor de nombre.
    */
   public String getNombre () {
     return nombre;
@@ -50,15 +50,15 @@ public class Jugador {
   //
 
   /**
-   * @param jugador
-   */
+  * @param jugador
+  */
   public void Jugador (String jugador) {
   }
 
 
   /**
-   * @return String
-   */
+  * @return String
+  */
   public String getNombre (String nombre) {
       return nombre;
   }

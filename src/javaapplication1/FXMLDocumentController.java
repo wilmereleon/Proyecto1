@@ -20,7 +20,7 @@ import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author Wílmer E. León
+ * @author Wilmer E. Leon
  */
 
 public class FXMLDocumentController implements Initializable {
@@ -47,7 +47,11 @@ public class FXMLDocumentController implements Initializable {
     
 
     /**
-     * Initializes the controller class.
+     * Inicializa el controlador de las clases
+     * @param url
+     * Comentario: recibe el URL de la inicialización.
+     * @param rb
+     * Comentario: recibe el rb de la incialización.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -55,96 +59,101 @@ public class FXMLDocumentController implements Initializable {
     } 
    
     
-    //
-    // Constructors
-    //
+    /**
+    * Constructores.
+    * 
+    /
+
+    /**
+    * @author Wilmer E. Leon
+    * Comentario: constructor.
+    */
     public FXMLDocumentController (){
   
     }
   
-    //
-    // Methods
-    //
-
-
-    //
-    // Accessor methods
-    //
+    /**
+    * @Métodos
+    * Comentarios: en esta sección están los métodos de la clase controlador.
+    */
 
     /**
-    * Set the value of modelo
-    * @param modelo the new value of modelo
+    * Establece el valor de la variable «modelo». El modelo representa el nombre la
+    * descripción de la tarjeta.
+    * @param modelo , el nuevo valor de modelo.
     */
     public void setModelo (Main modelo) {
         modelo = modelo;
     }
 
     /**
-    * Get the value of modelo
-    * @return the value of modelo
+    * Obtiene el valor de la variable modelo.
+    * @return el valor de modelo del Main.
     */
     public Main getModelo () {
         return modelo;
     }
 
     /**
-    * Set the value of vista
-    * @param vista the new value of vista
+    * Establece el valor de la variable vista. «Vista» representa la imagen de la
+    * tarjeta.
+    * @param vista , el nuevo valor de vista.
     */
     public void setVista (JavaApplication1 vista) {
         vista = vista;
     }
 
     /**
-    * Get the value of vista
-    * @return the value of vista
+    * Obtiene el valor de vista.
+    * @return el valor de vista.
     */
     public JavaApplication1 getVista () {
         return vista;
     }
 
     /**
-    * Set the value of jugador
-    * @param jugador the new value of jugador
+    * Establece el valor de jugador.
+    * @param jugador , el nuevo valor de jugador. recibe un nombre de tres
+    * letras y un puntaje (String).
     */
     public void setJugador (Jugador jugador) {
         jugador = jugador;
     }
 
     /**
-    * Get the value of jugador
-    * @return the value of jugador
+    * Obtiene el valor de jugador.
+    * @return el valor de jugador. Retorna el valor obtenido.
     */
     public Jugador getJugador () {
         return jugador;
     }
 
     /**
-    * Set the value of tableros
-    * @param newVar the new value of tableros
+    * Obtiene el valor de tableros.
+    * @param tablero
     */
     public void setTableros (Tablero[] tablero) {
         tableros = tablero;
     }
 
     /**
-    * Get the value of tableros
-    * @return the value of tableros
+    * Establece el valor de tableros.
+    * @return el valor de tableros.
     */
     public Tablero[] getTableros () {
         return tableros;
     }
 
     /**
-    * Set the value of tableroActual
-    * @param tablero the new value of tableroActual
+    * Obtiene el valor de tableroActual
+    * @param tablero , el nuevo valor de tableroActual
     */
     public void setTableroActual (Tablero tablero) {
         tableroActual = tablero;
     }
 
     /**
-    * Get the value of tableroActual
+    * Establece the value of tableroActual
     * @return the value of tableroActual
     */
     public Tablero getTableroActual () {
@@ -152,30 +161,42 @@ public class FXMLDocumentController implements Initializable {
     }
 
     //
-    // Other methods
+    // Otros métodos.
     //
 
     /**
+    * @author Wilmer E Leon
+    * Comentario: constructor vacío.
     */
     public void FXMLDocumentController () {
     }
 
 
     /**
+    * @author Wilmer E Leon
+    * Comentario: inicia el juego.
     */
     public void iniciarJuego () {
+        /**
+        * Insertar instrucción de arranque de eventos del juego desde tablero
+        * uno.
+        */
     }
 
 
     /**
-    * @param tema
+    * @param tema ingresa a la selección del tema que asigna hacia que temática
+    * iniciar el juego o partida.
     */
     public void seleccionarTema (int tema){
+        /**
+        * Insertar eventos de la selección de tema.
+        */
     }
 
 
     /**
-    * @param Tarjeta
+    * @param tema selecciona la tarjeta del tema.
     */
     public void seleccionarTarjeta (Tarjeta tema){
     }
@@ -183,27 +204,38 @@ public class FXMLDocumentController implements Initializable {
 
     /**
     * @param tarjeta1
+    * @param tarjeta2
     * @return boolean
-    * @param Tarjeta
+    * Comentario: comapra las tarjetas para iniciar el cotejo y decidir si es
+    * un acierto o un desacierto.
     */
     public boolean compararTarjetas (Tarjeta tarjeta1, Tarjeta tarjeta2) {
+        /**
+        * Insertar lógica del juego.
+        */
         
-        // Poner lógica del juego
         return false; 
     }
 
 
     /**
     * @param puntaje
+    * Comentario: evalúa los valores de los puntajes para ingresarlos en el
+    * marcador.
     */
     public void actualizarPuntaje (boolean puntaje) {
+        /**
+        * Insertar lógica del juego.
+        */
     }
 
 
     /**
-    * @param puntaje
+    * @param vidas
+    * Comentario: De acuerdo con demás eventos (desacierto de tarjeta o avance a
+    * último tablero, se cambia el valor de las vidas).
     */
-    public void actualizarVidas (boolean puntaje) {
+    public void actualizarVidas (boolean vidas) {
     }
 
 
@@ -240,8 +272,11 @@ public class FXMLDocumentController implements Initializable {
 
 
     /**
+    * Comentario: termina la ejecución del juego. 
     */
     public void terminarJuego (){
+        /**
+        * Insertar instrucción de juego finalizado.
+        */
     } 
-    
 }

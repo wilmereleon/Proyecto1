@@ -11,17 +11,21 @@ import javafx.fxml.Initializable;
 /**
  * FXML Controller class
  *
- * @author Didier
+ * @author Didier Tabares
  */
 public class FXMLTemaEspacioController implements Initializable {
 
     /**
-     * Initializes the controller class.
-     */
+    * Inicializa el controlador de clase.
+    */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
+    
+    /**
+    * Cierra la ventana.
+    */
 
     public void cerrarVentana(){
         

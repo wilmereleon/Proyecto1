@@ -7,9 +7,8 @@ package javaapplication1;
 import javafx.scene.control.Button;
 import javafx.scene.media.AudioClip;
 /**
- *
- * @author Wílmer E. León
- */
+* @author Wilmer E Leon
+*/
 public class Tarjeta {
     //
     // Fields
@@ -66,16 +65,16 @@ public class Tarjeta {
         return boton.getText().equals("✔");
     }
     /**
-    * Set the value of tema
-    * @param tema the new value of tema
+    * Obtiene el valor de tema.
+    * @param tema , el nuevo valor de tema.
     */
     public void setTema (int tema) {
         tema = tema;
     }
 
     /**
-    * Get the value of tema
-    * @return the value of tema
+    * Establece el valor de tema.
+    * @return el valor de tema.
     */
     public int getTema () {
         return tema;
@@ -86,36 +85,39 @@ public class Tarjeta {
     }
 
     /**
-    * Set the value of imagen
-    * @param imagen the new value of imagen
+    * Obtiene el valor de imagen.
+    * @param imagen , el nuevo valor de imagen.
     */
     public void setImagen (String imagen) {
         imagen = imagen;
     }
 
     /**
-    * Get the value of imagen
-    * @return the value of imagen
+    * Establece el valor de imagen.
+    * @return el valor de i.magen
     */
     public String getImagen () {
         return imagen;
     }
 
     /**
-    * Set the value of estadoDeTarjeta
-    * @param oculta visible acertada the new value of estadoDeTarjeta
+    * Obtiene el valor de estadoDeTarjeta
+    * @param oculta
+    * @param visible
+    * @param acertada , los nuevos posoibles estados de estadoDeTarjeta.
     */
     public void setEstadoDeTarjeta (int oculta, int visible, int acertada) {
     /**
-    * @autor: Wílmer E. León
+    * @autor: Wílmer E. León.
     * Comentario: poner código de estados
-   */
+    */
+        
         estadoDeTarjeta = visible;
     }
 
     /**
-    * Get the value of estadoDeTarjeta
-    * @return the value of estadoDeTarjeta
+    * Establece el valor de estadoDeTarjeta.
+    * @return el valor de estadoDeTarjeta.
     */
     public int getEstadoDeTarjeta () {
         return estadoDeTarjeta;
@@ -131,7 +133,7 @@ public class Tarjeta {
     */
     public void Tarjeta (int estadoDeTarjeta, String imagen) {
     /**
-    * @autor: Wílmer E. León
+    * @author Wilmer E. Leon
     * Comentario: poner código de Tarjeta
     */
     }
@@ -146,7 +148,7 @@ public class Tarjeta {
 
 
     /**
-    * @return       String
+    * @return imagen String.
     */
     public String getImagen (String imagen) {
         return imagen;

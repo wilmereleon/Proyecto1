@@ -16,12 +16,12 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Wílmer E. León
+ * @author Wilmer E Leon
  */
 public class JavaApplication1 extends Application {
 
     /**
-     * @param args the command line arguments
+     * @param args , el comando de línea de argumentos.
      */
     public static void main(String[] args) {
         launch(args);
