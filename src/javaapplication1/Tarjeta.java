@@ -37,6 +37,11 @@ public class Tarjeta {
     //
     // Accessor methods
     //
+    /**
+     * 
+     * @param sonido
+     * @param pareja 
+     */
     public Tarjeta (AudioClip sonido, int pareja) {
         this.sonido = sonido;
         this.pareja = pareja;
@@ -45,12 +50,21 @@ public class Tarjeta {
       
         boton.setStyle("-fx-pref-width: 100px; -fx-pref-height: 100px; -fx-font-size: 36px; -fx-border-radius: 50%;");
     }
-  
+    
+    /**
+     * 
+     * @return boton
+     * Comentario: define el método que devuelve el botón de la tarjeta
+     */
     public Button getBoton() {
         return boton;
     }
 
-  
+    /**
+     * 
+     * @return sound
+     * Comentario: define el método que devuelve el sonido de la tarjeta
+     */
     public AudioClip getSonido() {
         return sonido;
     }
@@ -79,14 +93,27 @@ public class Tarjeta {
     public int getTema () {
         return tema;
     }
-  
+    
+    /**
+     * 
+     * @return pareja
+     * Comentario: define el método que devuelve el par de la tarjeta
+     */
     public int getPareja() {
         return pareja;
     }
 
     /**
-    * Obtiene el valor de imagen.
-    * @param imagen , el nuevo valor de imagen.
+     * Define el método que cambia el texto del botón a «✔»
+     */
+    public void show (){
+        boton.setText("✔");
+    }
+    
+    /**
+    *
+    * @param imagen
+    * COmentario: el nuevo valor de imagen. Obtiene el valor de imagen.
     */
     public void setImagen (String imagen) {
         imagen = imagen;
@@ -133,8 +160,7 @@ public class Tarjeta {
     */
     public void Tarjeta (int estadoDeTarjeta, String imagen) {
     /**
-    * @author Wilmer E. Leon
-    * Comentario: poner código de Tarjeta
+    * Poner código de Tarjeta
     */
     }
 
