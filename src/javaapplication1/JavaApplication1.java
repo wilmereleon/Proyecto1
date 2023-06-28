@@ -31,7 +31,7 @@ public class JavaApplication1 extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        
+      
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setTitle("Maestro de la memoria: une parejas con tarjetas");
