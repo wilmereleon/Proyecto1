@@ -172,14 +172,12 @@ public class FXMLTemaTecnologiaController implements Initializable {
         
     }
     
-    /**
-        * Crea e inicia un juego con el nivel actual (revisar ruta .fxml)
-        */
-    
-    
+   /**
+     * Hace el cambio de tablero
+     */ 
     @FXML
     public void cambiarTablero () {
-        
+        // Hay que cambiar la ruta de este FXML a la del siguiente tablero (tablero dos).
         FXMLLoader elegirTema = new FXMLLoader(getClass().getResource("FXMLElegirTema.fxml"));
         
         try {
