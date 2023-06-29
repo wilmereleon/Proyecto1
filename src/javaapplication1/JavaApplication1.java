@@ -16,26 +16,27 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Wílmer E. León
+ * @author Wilmer E Leon
  */
 public class JavaApplication1 extends Application {
-
+    
+    
     /**
-     * @param args the command line arguments
+     * @param args
+     * el comando de línea de argumentos.
      */
     public static void main(String[] args) {
         launch(args);
     }
 
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage primaryStage) throws Exception {
+      
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         Scene scene = new Scene(root);
-        stage.setTitle("Maestro de la memoria: une parejas con tarjetas");
-        stage.setScene(scene);
-        stage.show();
-
+        primaryStage.setTitle("Maestro de la memoria: une parejas con tarjetas");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
-    
 }
 

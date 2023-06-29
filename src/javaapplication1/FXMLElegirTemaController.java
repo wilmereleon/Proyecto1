@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author Wilme
+ * @author Wilmer E. Leon
  */
 public class FXMLElegirTemaController implements Initializable {
     
@@ -28,7 +28,7 @@ public class FXMLElegirTemaController implements Initializable {
     private Button btnTec;
 
     /**
-     * Initializes the controller class.
+     * Inicializa la clase controlador.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -96,5 +96,4 @@ public class FXMLElegirTemaController implements Initializable {
     public void cerrarVentana(){
         
     }
-    
 }

@@ -7,9 +7,8 @@ package javaapplication1;
 import javafx.scene.control.Button;
 import javafx.scene.media.AudioClip;
 /**
- *
- * @author Wílmer E. León
- */
+* @author Wilmer E Leon
+*/
 public class Tarjeta {
     //
     // Fields
@@ -38,6 +37,11 @@ public class Tarjeta {
     //
     // Accessor methods
     //
+    /**
+     * 
+     * @param sonido
+     * @param pareja 
+     */
     public Tarjeta (AudioClip sonido, int pareja) {
         this.sonido = sonido;
         this.pareja = pareja;
@@ -46,12 +50,21 @@ public class Tarjeta {
       
         boton.setStyle("-fx-pref-width: 100px; -fx-pref-height: 100px; -fx-font-size: 36px; -fx-border-radius: 50%;");
     }
-  
+    
+    /**
+     * 
+     * @return boton
+     * Comentario: define el método que devuelve el botón de la tarjeta
+     */
     public Button getBoton() {
         return boton;
     }
 
-  
+    /**
+     * 
+     * @return sound
+     * Comentario: define el método que devuelve el sonido de la tarjeta
+     */
     public AudioClip getSonido() {
         return sonido;
     }
@@ -66,56 +79,72 @@ public class Tarjeta {
         return boton.getText().equals("✔");
     }
     /**
-    * Set the value of tema
-    * @param tema the new value of tema
+    * Obtiene el valor de tema.
+    * @param tema , el nuevo valor de tema.
     */
     public void setTema (int tema) {
         tema = tema;
     }
 
     /**
-    * Get the value of tema
-    * @return the value of tema
+    * Establece el valor de tema.
+    * @return el valor de tema.
     */
     public int getTema () {
         return tema;
     }
-  
+    
+    /**
+     * 
+     * @return pareja
+     * Comentario: define el método que devuelve el par de la tarjeta
+     */
     public int getPareja() {
         return pareja;
     }
 
     /**
-    * Set the value of imagen
-    * @param imagen the new value of imagen
+     * Define el método que cambia el texto del botón a «✔»
+     */
+    public void show (){
+        boton.setText("✔");
+    }
+    
+    /**
+    *
+    * @param imagen
+    * COmentario: el nuevo valor de imagen. Obtiene el valor de imagen.
     */
     public void setImagen (String imagen) {
         imagen = imagen;
     }
 
     /**
-    * Get the value of imagen
-    * @return the value of imagen
+    * Establece el valor de imagen.
+    * @return el valor de i.magen
     */
     public String getImagen () {
         return imagen;
     }
 
     /**
-    * Set the value of estadoDeTarjeta
-    * @param oculta visible acertada the new value of estadoDeTarjeta
+    * Obtiene el valor de estadoDeTarjeta
+    * @param oculta
+    * @param visible
+    * @param acertada , los nuevos posoibles estados de estadoDeTarjeta.
     */
     public void setEstadoDeTarjeta (int oculta, int visible, int acertada) {
     /**
-    * @autor: Wílmer E. León
+    * @autor: Wílmer E. León.
     * Comentario: poner código de estados
-   */
+    */
+        
         estadoDeTarjeta = visible;
     }
 
     /**
-    * Get the value of estadoDeTarjeta
-    * @return the value of estadoDeTarjeta
+    * Establece el valor de estadoDeTarjeta.
+    * @return el valor de estadoDeTarjeta.
     */
     public int getEstadoDeTarjeta () {
         return estadoDeTarjeta;
@@ -131,8 +160,7 @@ public class Tarjeta {
     */
     public void Tarjeta (int estadoDeTarjeta, String imagen) {
     /**
-    * @autor: Wílmer E. León
-    * Comentario: poner código de Tarjeta
+    * Poner código de Tarjeta
     */
     }
 
@@ -146,7 +174,7 @@ public class Tarjeta {
 
 
     /**
-    * @return       String
+    * @return imagen String.
     */
     public String getImagen (String imagen) {
         return imagen;
