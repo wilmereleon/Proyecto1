@@ -4,6 +4,10 @@
  */
 package javaapplication1;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 /**
  *
  * @author Wilmer E Leon
@@ -12,54 +16,104 @@ public class Jugador {
   //
   // Fields
   //
-  private String nombre;
-  
-  //
-  // Constructors
-  //
-  public Jugador () {
-  }
-  
-  //
-  // Methods
-  //
-
-
-  //
-  // Accessor methods
-  //
-
   /**
-   * Obtiene el valor de nombre. «Nombre» es el asignado por el jugador.
-   * @param nombre , el nuevo valor de nombre.
+   * Estos son los atributos de la clase: el nombre y el puntaje del jugador
    */
-  public void setNombre (String nombre) {
-    nombre = nombre;
-  }
+    private String nombre;
+    private int puntaje;
+  
+    //
+    // Constructors
+    //
+    public Jugador () {
+        
+    }
+    
+    /**
+     * 
+     * @param nombre 
+     */
+    public Jugador(String nombre) {
+    /**
+     * Se asigna el nombre al atributo, pero solo si tiene 3 letras en mayúsculas,
+     * sino se lanza una excepción
+     */
+        if (nombre.length() == 3 && nombre.matches("[A-Z]+")) {
+            this.nombre = nombre;
+        }
+        else {
+            throw new IllegalArgumentException("El nombre debe tener 3 letras en minúsculas");
+        }
+        /**
+         * Se inicializa el puntaje en cero.
+         */
+        this.puntaje = 0;
+    }
 
-  /**
-   * Establece el valor de nombre.
-   * @return el valor de nombre.
-   */
-  public String getNombre () {
-    return nombre;
-  }
+    /**
+     * 
+     * @return 
+     * Comnetario: este es un método para obtener el nombre del jugador.
+     */
+    public String getNombre() {
+        return this.nombre;
+    }
 
-  //
-  // Other methods
-  //
+    /**
+     * 
+     * @return 
+     * Comenario: este es un método para obtener el puntaje del jugador
+     */
+    public int getPuntaje() {
+        return this.puntaje;
+    }
 
-  /**
-  * @param jugador
-  */
-  public void Jugador (String jugador) {
-  }
+    /**
+     * 
+     * @param cantidad 
+     * Comentario: Este es un método para incrementar el puntaje del jugador en
+     * una cantidad dada
+     */
+    public void incrementarPuntaje(int cantidad) {
+        this.puntaje += cantidad;
+    }
 
-
-  /**
-  * @return String
-  */
-  public String getNombre (String nombre) {
-      return nombre;
-  }
+    /**
+     * Este es un método para almacenar el puntaje del jugador en un archivo de
+     * texto llamado puntajes.txt
+     */
+    public void almacenarPuntaje() {
+        try {
+        /**
+         * Se crea un objeto de la clase FileWriter para escribir en el archivo.
+         */
+        FileWriter fw = new FileWriter("puntajes.txt", true);
+        /**
+         * Se crea un objeto de la clase PrintWriter para escribir líneas de
+         * texto en el archivo-
+         * .
+         */
+        PrintWriter pw = new PrintWriter(fw);
+        /**
+         * Se escribe el nombre y el puntaje del jugador separados por una coma
+         * en una línea del archivo.
+         */
+        pw.println(this.nombre + "," + this.puntaje);
+        /**
+         * Se cierra el PrintWriter.
+         */
+        pw.close();
+        /**
+         * Se cierra el FileWriter.
+         */
+        fw.close();
+        }
+        catch (IOException e) {
+        /**
+         * Se imprime el mensaje de error si ocurre una excepción al escribir en
+         * el archivo.
+         */
+        System.out.println("Error al escribir en el archivo: " + e.getMessage());
+        }
+    }
 }

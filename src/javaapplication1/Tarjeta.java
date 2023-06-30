@@ -16,12 +16,6 @@ public class Tarjeta {
     private Button boton;
     private AudioClip sonido;
     private int pareja;
-    private int tema;
-    private String imagen;
-    private int oculta = 0;
-    private int visible = 1;
-    private int acertada = 2;
-    private int estadoDeTarjeta;
   
   
     //
@@ -78,21 +72,7 @@ public class Tarjeta {
     public boolean isShown() {
         return boton.getText().equals("✔");
     }
-    /**
-    * Obtiene el valor de tema.
-    * @param tema , el nuevo valor de tema.
-    */
-    public void setTema (int tema) {
-        tema = tema;
-    }
 
-    /**
-    * Establece el valor de tema.
-    * @return el valor de tema.
-    */
-    public int getTema () {
-        return tema;
-    }
     
     /**
      * 
@@ -110,89 +90,10 @@ public class Tarjeta {
         boton.setText("✔");
     }
     
-    /**
-    *
-    * @param imagen
-    * COmentario: el nuevo valor de imagen. Obtiene el valor de imagen.
-    */
-    public void setImagen (String imagen) {
-        imagen = imagen;
-    }
 
-    /**
-    * Establece el valor de imagen.
-    * @return el valor de i.magen
-    */
-    public String getImagen () {
-        return imagen;
-    }
-
-    /**
-    * Obtiene el valor de estadoDeTarjeta
-    * @param oculta
-    * @param visible
-    * @param acertada , los nuevos posoibles estados de estadoDeTarjeta.
-    */
-    public void setEstadoDeTarjeta (int oculta, int visible, int acertada) {
-    /**
-    * @autor: Wílmer E. León.
-    * Comentario: poner código de estados
-    */
-        
-        estadoDeTarjeta = visible;
-    }
-
-    /**
-    * Establece el valor de estadoDeTarjeta.
-    * @return el valor de estadoDeTarjeta.
-    */
-    public int getEstadoDeTarjeta () {
-        return estadoDeTarjeta;
-    }
 
     //
     // Other methods
     //
 
-    /**
-    * @param estadoDeTarjeta
-    * @param imagen
-    */
-    public void Tarjeta (int estadoDeTarjeta, String imagen) {
-    /**
-    * Poner código de Tarjeta
-    */
-    }
-
-
-    /**
-    * @return int
-    */
-    public int getTema (int tema) {
-        return tema;
-    }
-
-
-    /**
-    * @return imagen String.
-    */
-    public String getImagen (String imagen) {
-        return imagen;
-    }
-
-
-    /**
-    * @return int
-    */
-    public int getEstadoDeTarjeta (int tema) {
-        return tema;
-    }
-
-
-    /**
-    * @param tema
-    */
-    public void setEstadoDeTarjeta (int tema) {
-    
-    } 
 }
