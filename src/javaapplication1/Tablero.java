@@ -4,8 +4,6 @@
  */
 package javaapplication1;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import javafx.scene.media.AudioClip;
 
 /**
@@ -23,7 +21,6 @@ public class Tablero {
   private Tarjeta[][] tarjetas;
   private int filas;
   private int columnas;
-  
   
     
   //

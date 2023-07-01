@@ -1,46 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.effect.Bloom?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="AnchorPane" prefHeight="348.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication1.FXMLTemaEspacioController">
-   <children>
-      <ImageView fitHeight="365.0" fitWidth="726.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Img/3660.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="86.0" layoutX="216.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Img/cartaTemaEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="86.0" layoutX="386.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Img/cartaTemaEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="86.0" layoutX="83.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Img/cartaTemaEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="86.0" layoutX="527.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Img/cartaTemaEspacio.png" />
-         </image>
-      </ImageView>
-      <Label alignment="CENTER" layoutX="181.0" layoutY="14.0" prefHeight="58.0" prefWidth="346.0" text="Escoge los pares de tarjetas" textFill="WHITE">
-         <font>
-            <Font name="System Bold Italic" size="24.0" />
-         </font>
-         <effect>
-            <Bloom />
-         </effect>
-      </Label>
-   </children>
+<AnchorPane id="AnchorPane" prefHeight="379.0" prefWidth="695.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication1.FXMLTemaEspacioController">
+    <children>
+        <AnchorPane fx:id="root" prefHeight="500.0" prefWidth="600.0">
+      
+            <children>
+                <BorderPane fx:id="body" prefHeight="500.0" prefWidth="695.0" styleClass="body" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-95.0" AnchorPane.topAnchor="0.0">
+               <center>
+                     
+                                    <GridPane fx:id="gameMatrix" alignment="CENTER" hgap="10.0" prefHeight="500.0" prefWidth="631.0" vgap="10.0" BorderPane.alignment="CENTER">
+                     <columnConstraints>
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                     </rowConstraints>
+                     <padding>
+                        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                     </padding>
+            
+                        </GridPane>
+               </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" />
+    </effect>
 </AnchorPane>
