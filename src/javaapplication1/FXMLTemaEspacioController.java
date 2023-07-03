@@ -4,6 +4,8 @@
  */
 package javaapplication1;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -13,6 +15,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
@@ -22,6 +27,56 @@ import javafx.stage.Stage;
  * @author Didier Tabares
  */
 public class FXMLTemaEspacioController implements Initializable {
+    
+    /**
+     * 
+     */
+    @FXML
+    private ImageView c00;
+    @FXML
+    private ImageView c01;
+    @FXML
+    private ImageView c10;
+    @FXML
+    private ImageView c11;
+    @FXML
+    private ImageView r00;
+    @FXML
+    private ImageView r11;
+    @FXML
+    private ImageView r10;
+    @FXML
+    private ImageView r01;
+    
+    
+    public void reversoA(MouseEvent mouseEvent){
+        r00.setVisible(false);
+    }
+    
+    public void reversoB(MouseEvent mouseEvent){
+        r11.setVisible(false);
+    }
+    
+    public void reversoC(MouseEvent mouseEvent){
+        r01.setVisible(false);
+    }
+    
+    public void reversoD(MouseEvent mouseEvent){
+        r10.setVisible(false);
+    }
+    
+    public void planeta(MouseEvent mouseEvent){
+        c00.setVisible(false);
+        c11.setVisible(false);
+    }
+    
+    public void anillo(MouseEvent mouseEvent){
+        c00.setVisible(false);
+        c11.setVisible(false);
+        c01.setVisible(false);
+        c10.setVisible(false);
+    }
+    
     /**
      * Define el atributo que representa el tablero de juego
      */
@@ -62,12 +117,16 @@ public class FXMLTemaEspacioController implements Initializable {
     
     /**
      * 
-     * @param url
-     * @param rb 
+     * @throws FileNotFoundException 
      */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+    @FXML
+    public void initialize() throws FileNotFoundException {
+        FileInputStream entrada = new FileInputStream("Img/carta1A.png");
+        Image imagen = new Image(entrada);
+        ImageView vistaImagen = new ImageView(imagen);
+        vistaImagen.setFitWidth(90);
+        vistaImagen.setFitHeight(90);
+        cuadricula.add(vistaImagen, 0, 0);
     }
     
     private void handleButtonAction (Tarjeta tarjeta) {
@@ -288,5 +347,10 @@ public class FXMLTemaEspacioController implements Initializable {
         catch (Exception e) {
             e.printStackTrace ();
         }
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        
     }
 }
