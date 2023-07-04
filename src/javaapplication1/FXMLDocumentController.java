@@ -23,6 +23,7 @@ import javafx.stage.Stage;
  */
 
 public class FXMLDocumentController implements Initializable {
+    
     @FXML
     private Label label;
     
