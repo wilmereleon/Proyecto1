@@ -9,6 +9,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.animation.PauseTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -20,6 +21,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 /**
  * FXML Controller class
@@ -29,7 +31,7 @@ import javafx.stage.Stage;
 public class FXMLTemaEspacioController implements Initializable {
     
     /**
-     * 
+     * Imágenes de tablero uno
      */
     @FXML
     private ImageView c00;
@@ -48,33 +50,117 @@ public class FXMLTemaEspacioController implements Initializable {
     @FXML
     private ImageView r01;
     
-    
+    /**
+     * 
+     * @param mouseEvent 
+     */
     public void reversoA(MouseEvent mouseEvent){
         r00.setVisible(false);
+        if (c00.isVisible() && !c11.isVisible() && !c01.isVisible()) {    
+            c00.setOnMouseClicked(event -> {
+                PauseTransition pause = new PauseTransition(Duration.seconds(1));
+                pause.setOnFinished(e ->{
+                    r00.setVisible(true);  
+                });
+                pause.play(); 
+            }); 
+        }
+        else if (c00.isVisible() && c11.isVisible() && r01.isVisible() && r10.isVisible()) {
+            c00.setOnMouseClicked(event -> {
+                PauseTransition pause = new PauseTransition(Duration.seconds(1));
+                pause.setOnFinished(e ->{
+                    c00.setVisible(false);
+                    c11.setVisible(false);
+                });
+                pause.play(); 
+            }); 
+        }
     }
     
+    /**
+     * 
+     * @param mouseEvent 
+     */
     public void reversoB(MouseEvent mouseEvent){
-        r11.setVisible(false);
+        r01.setVisible(false);
+        if (c01.isVisible() && !c10.isVisible() && !c00.isVisible()) {
+            c01.setOnMouseClicked(event -> {
+                PauseTransition pause = new PauseTransition(Duration.seconds(1));
+                pause.setOnFinished(e ->{
+                    r01.setVisible(true);  
+                });
+                pause.play(); 
+            }); 
+        }
+        else if (c01.isVisible() && c10.isVisible() && r00.isVisible() && r11.isVisible()) {
+           c01.setOnMouseClicked(event -> {
+                PauseTransition pause = new PauseTransition(Duration.seconds(1));
+                pause.setOnFinished(e ->{
+                    c01.setVisible(false);
+                    c10.setVisible(false);
+                });
+                pause.play(); 
+            }); 
+        }
     }
     
+    /**
+     * 
+     * @param mouseEvent 
+     */
     public void reversoC(MouseEvent mouseEvent){
-        r01.setVisible(false);
+        r10.setVisible(false);
+        if (c10.isVisible() && !c01.isVisible()) {    
+            c10.setOnMouseClicked(event -> {
+                PauseTransition pause = new PauseTransition(Duration.seconds(1));
+                pause.setOnFinished(e ->{
+                    r10.setVisible(true);  
+                });
+                pause.play(); 
+            }); 
+        }
+        //else if (c10.isVisible() && c10.isVisible()) {
+            
+        //}
+        
     }
     
     public void reversoD(MouseEvent mouseEvent){
-        r10.setVisible(false);
+        r11.setVisible(false);
+        if (c11.isVisible() && !c00.isVisible()) {    
+            c11.setOnMouseClicked(event -> {
+                PauseTransition pause = new PauseTransition(Duration.seconds(1));
+                pause.setOnFinished(e ->{
+                    r11.setVisible(true);  
+                });
+                pause.play(); 
+            }); 
+        }
+        //else if (c11.isVisible() && c00.isVisible()) {
+            
+        //}
     }
     
+    /**
+     * 
+     * @param mouseEvent 
+     */
     public void planeta(MouseEvent mouseEvent){
-        c00.setVisible(false);
-        c11.setVisible(false);
+        r01.setVisible(false);
+        if(c10.isVisible() && c01.isVisible() && !c00.isVisible() && !c11.isVisible()) {
+            c10.setVisible(false);
+            c11.setVisible(false);
+        }
+        
     }
     
+    /**
+     * 
+     * @param mouseEvent 
+     */
     public void anillo(MouseEvent mouseEvent){
-        c00.setVisible(false);
-        c11.setVisible(false);
-        c01.setVisible(false);
-        c10.setVisible(false);
+        
+        
     }
     
     /**
@@ -121,7 +207,7 @@ public class FXMLTemaEspacioController implements Initializable {
      */
     @FXML
     public void initialize() throws FileNotFoundException {
-        FileInputStream entrada = new FileInputStream("Img/carta1A.png");
+        FileInputStream entrada = new FileInputStream("Img/reversoEspacio.png");
         Image imagen = new Image(entrada);
         ImageView vistaImagen = new ImageView(imagen);
         vistaImagen.setFitWidth(90);
