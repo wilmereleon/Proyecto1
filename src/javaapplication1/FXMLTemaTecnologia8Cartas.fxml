@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="javaapplication1.FXMLTemaTecnologia8CartasController">
+   <children>
+      <ImageView fitHeight="429.0" fitWidth="819.0" layoutX="10.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/do2oo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="14.0" layoutY="14.0">
+         <image>
+            <Image url="@../Img/cartaTemaTecnología.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="121.0" layoutY="14.0">
+         <image>
+            <Image url="@../Img/cartaTemaTecnología.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="232.0" layoutY="14.0">
+         <image>
+            <Image url="@../Img/cartaTemaTecnología.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="332.0" layoutY="14.0">
+         <image>
+            <Image url="@../Img/cartaTemaTecnología.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="14.0" layoutY="188.0">
+         <image>
+            <Image url="@../Img/cartaTemaTecnología.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="121.0" layoutY="188.0">
+         <image>
+            <Image url="@../Img/cartaTemaTecnología.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="232.0" layoutY="188.0">
+         <image>
+            <Image url="@../Img/cartaTemaTecnología.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="332.0" layoutY="188.0">
+         <image>
+            <Image url="@../Img/cartaTemaTecnología.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="446.0" layoutY="150.0" prefHeight="58.0" prefWidth="346.0" text="Escoge los pares de tarjetas" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="446.0" layoutY="14.0" prefHeight="58.0" prefWidth="346.0" text="Nivel 2" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

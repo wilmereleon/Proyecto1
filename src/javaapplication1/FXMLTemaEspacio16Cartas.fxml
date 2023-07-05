@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="404.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication1.FXMLTemaEspacio16CartasController">
+   <children>
+      <ImageView fitHeight="365.0" fitWidth="726.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/3660.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="63.0" layoutX="24.0" layoutY="24.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="63.0" layoutX="101.0" layoutY="24.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="63.0" layoutX="181.0" layoutY="24.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="63.0" layoutX="260.0" layoutY="24.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="63.0" layoutX="337.0" layoutY="24.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="63.0" layoutX="25.0" layoutY="266.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="63.0" layoutX="102.0" layoutY="266.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="63.0" layoutX="182.0" layoutY="266.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="63.0" layoutX="261.0" layoutY="266.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="63.0" layoutX="338.0" layoutY="266.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="63.0" layoutX="413.0" layoutY="24.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="63.0" layoutX="102.0" layoutY="147.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="63.0" layoutX="182.0" layoutY="147.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="63.0" layoutX="261.0" layoutY="147.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="63.0" layoutX="413.0" layoutY="266.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="63.0" layoutX="338.0" layoutY="147.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="425.0" layoutY="24.0" prefHeight="58.0" prefWidth="346.0" text="Nivel 3" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="397.0" layoutY="160.0" prefHeight="58.0" prefWidth="346.0" text="Escoge los pares de tarjetas" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
