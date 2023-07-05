@@ -56,25 +56,28 @@ public class FXMLTemaEspacioController implements Initializable {
      */
     public void reversoA(MouseEvent mouseEvent){
         r00.setVisible(false);
-        if (c00.isVisible() && !c11.isVisible() && !c01.isVisible()) {    
+        if (c00.isVisible() && r10.isVisible() && r01.isVisible() && r11.isVisible()) {    
             c00.setOnMouseClicked(event -> {
                 PauseTransition pause = new PauseTransition(Duration.seconds(1));
                 pause.setOnFinished(e ->{
-                    r00.setVisible(true);  
+                    r00.setVisible(true);
                 });
                 pause.play(); 
-            }); 
+            });
         }
-        else if (c00.isVisible() && c11.isVisible() && r01.isVisible() && r10.isVisible()) {
-            c00.setOnMouseClicked(event -> {
+        else if (c00.isVisible() && c01.isVisible() && r10.isVisible() && r11.isVisible()) {
+            c01.setOnMouseClicked(event -> {
                 PauseTransition pause = new PauseTransition(Duration.seconds(1));
                 pause.setOnFinished(e ->{
-                    c00.setVisible(false);
-                    c11.setVisible(false);
+                    r00.setVisible(true);
+                    r01.setVisible(true);
                 });
                 pause.play(); 
-            }); 
+            });
         }
+        
+        
+    
     }
     
     /**
@@ -83,24 +86,24 @@ public class FXMLTemaEspacioController implements Initializable {
      */
     public void reversoB(MouseEvent mouseEvent){
         r01.setVisible(false);
-        if (c01.isVisible() && !c10.isVisible() && !c00.isVisible()) {
+        if (c01.isVisible()) {    
             c01.setOnMouseClicked(event -> {
                 PauseTransition pause = new PauseTransition(Duration.seconds(1));
                 pause.setOnFinished(e ->{
-                    r01.setVisible(true);  
+                    r01.setVisible(true);
                 });
                 pause.play(); 
             }); 
         }
-        else if (c01.isVisible() && c10.isVisible() && r00.isVisible() && r11.isVisible()) {
-           c01.setOnMouseClicked(event -> {
+        else if (c10.isVisible() && c11.isVisible()) {
+            c11.setOnMouseClicked(event -> {
                 PauseTransition pause = new PauseTransition(Duration.seconds(1));
                 pause.setOnFinished(e ->{
-                    c01.setVisible(false);
-                    c10.setVisible(false);
+                    r10.setVisible(true);
+                    r11.setVisible(true);
                 });
                 pause.play(); 
-            }); 
+            });
         }
     }
     
@@ -110,35 +113,28 @@ public class FXMLTemaEspacioController implements Initializable {
      */
     public void reversoC(MouseEvent mouseEvent){
         r10.setVisible(false);
-        if (c10.isVisible() && !c01.isVisible()) {    
+        if (c10.isVisible()) {    
             c10.setOnMouseClicked(event -> {
                 PauseTransition pause = new PauseTransition(Duration.seconds(1));
                 pause.setOnFinished(e ->{
-                    r10.setVisible(true);  
+                    r10.setVisible(true);
                 });
                 pause.play(); 
             }); 
         }
-        //else if (c10.isVisible() && c10.isVisible()) {
-            
-        //}
-        
     }
     
     public void reversoD(MouseEvent mouseEvent){
         r11.setVisible(false);
-        if (c11.isVisible() && !c00.isVisible()) {    
+        if (c11.isVisible()) {   
             c11.setOnMouseClicked(event -> {
                 PauseTransition pause = new PauseTransition(Duration.seconds(1));
                 pause.setOnFinished(e ->{
-                    r11.setVisible(true);  
+                    r11.setVisible(true);
                 });
                 pause.play(); 
             }); 
         }
-        //else if (c11.isVisible() && c00.isVisible()) {
-            
-        //}
     }
     
     /**
@@ -146,12 +142,19 @@ public class FXMLTemaEspacioController implements Initializable {
      * @param mouseEvent 
      */
     public void planeta(MouseEvent mouseEvent){
-        r01.setVisible(false);
-        if(c10.isVisible() && c01.isVisible() && !c00.isVisible() && !c11.isVisible()) {
-            c10.setVisible(false);
-            c11.setVisible(false);
+        c01.setVisible(false);
+         if (c01.isVisible() && c10.isVisible() && !r01.isVisible() && !r10.isVisible()) {   
+            c10.setOnMouseClicked(event -> {
+                PauseTransition pause = new PauseTransition(Duration.seconds(1));
+                pause.setOnFinished(e ->{
+                    c10.setVisible(false);
+                    c01.setVisible(false);
+                    r10.setVisible(false);
+                    r01.setVisible(false);
+                });
+                pause.play(); 
+            }); 
         }
-        
     }
     
     /**
@@ -160,6 +163,7 @@ public class FXMLTemaEspacioController implements Initializable {
      */
     public void anillo(MouseEvent mouseEvent){
         
+  
         
     }
     
