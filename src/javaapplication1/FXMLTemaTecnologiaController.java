@@ -58,7 +58,7 @@ public class FXMLTemaTecnologiaController implements Initializable {
      * 
      */
     @FXML
-    private Button btnBotonPlay;
+    private Button btnSnT0;
     
     /**
      * 
@@ -178,12 +178,12 @@ public class FXMLTemaTecnologiaController implements Initializable {
     @FXML
     public void cambiarTablero () {
         // Hay que cambiar la ruta de este FXML a la del siguiente tablero (tablero dos).
-        FXMLLoader elegirTema = new FXMLLoader(getClass().getResource("FXMLElegirTema.fxml"));
+        FXMLLoader TemaTecnologia8Cartas = new FXMLLoader(getClass().getResource("FXMLTemaTecnologia8Cartas.fxml"));
         
         try {
-            Parent root = elegirTema.load();
+            Parent root = TemaTecnologia8Cartas.load();
             
-            FXMLElegirTemaController controlador = elegirTema.getController();
+            FXMLElegirTemaController controlador = TemaTecnologia8Cartas.getController();
             
             Scene scene = new Scene(root);
             Stage stage = new Stage();
@@ -194,7 +194,7 @@ public class FXMLTemaTecnologiaController implements Initializable {
             
             stage.setOnCloseRequest(e -> controlador.cerrarVentana());
             
-            Stage myStage = (Stage) this.btnBotonPlay.getScene().getWindow();
+            Stage myStage = (Stage) this.btnSnT0.getScene().getWindow();
             stage.setTitle("Maestro de la memoria: une parejas con tarjetas");
             
             myStage.close();

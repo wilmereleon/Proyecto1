@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="389.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication1.FXMLTemaEspacio8CartasController">
+   <children>
+      <ImageView fx:id="r00" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#reversoA" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r001" fitHeight="150.0" fitWidth="200.0" layoutX="112.0" layoutY="14.0" onMouseClicked="#reversoA" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r002" fitHeight="150.0" fitWidth="200.0" layoutX="214.0" layoutY="14.0" onMouseClicked="#reversoA" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r003" fitHeight="150.0" fitWidth="200.0" layoutX="314.0" layoutY="14.0" onMouseClicked="#reversoA" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r004" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="179.0" onMouseClicked="#reversoA" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r005" fitHeight="150.0" fitWidth="200.0" layoutX="112.0" layoutY="179.0" onMouseClicked="#reversoA" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r006" fitHeight="150.0" fitWidth="200.0" layoutX="214.0" layoutY="179.0" onMouseClicked="#reversoA" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r007" fitHeight="150.0" fitWidth="200.0" layoutX="314.0" layoutY="179.0" onMouseClicked="#reversoA" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="365.0" fitWidth="726.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/3660.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="387.0" layoutY="150.0" prefHeight="58.0" prefWidth="346.0" text="Escoge los pares de tarjetas" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="387.0" layoutY="14.0" prefHeight="58.0" prefWidth="346.0" text="Nivel 2" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="14.0" layoutY="14.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="112.0" layoutY="14.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="214.0" layoutY="14.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="314.0" layoutY="14.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="14.0" layoutY="192.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="112.0" layoutY="192.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="214.0" layoutY="192.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="314.0" layoutY="192.0">
+         <image>
+            <Image url="@../Img/reversoEspacio.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
