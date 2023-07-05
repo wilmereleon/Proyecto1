@@ -146,11 +146,7 @@ public class FXMLTemaEspacioController implements Initializable {
      * @param mouseEvent 
      */
     public void planeta(MouseEvent mouseEvent){
-        r01.setVisible(false);
-        if(c10.isVisible() && c01.isVisible() && !c00.isVisible() && !c11.isVisible()) {
-            c10.setVisible(false);
-            c11.setVisible(false);
-        }
+        
         
     }
     
