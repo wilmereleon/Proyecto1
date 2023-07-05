@@ -9,6 +9,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 
 /**
  * FXML Controller class
@@ -67,6 +68,9 @@ public class FXMLTemaEspacio8CartasController implements Initializable {
     @FXML
     private ImageView c31;
     
+    public void agujeroNegro (MouseEvent mouseEvent) {
+        
+    }
     /**
      * Initializes the controller class.
      */
