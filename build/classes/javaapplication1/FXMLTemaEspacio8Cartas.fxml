@@ -5,50 +5,13 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" prefHeight="389.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication1.FXMLTemaEspacio8CartasController">
    <children>
-      <ImageView fx:id="r00" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#reversoA" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Img/reversoEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="r001" fitHeight="150.0" fitWidth="200.0" layoutX="112.0" layoutY="14.0" onMouseClicked="#reversoA" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Img/reversoEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="r002" fitHeight="150.0" fitWidth="200.0" layoutX="214.0" layoutY="14.0" onMouseClicked="#reversoA" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Img/reversoEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="r003" fitHeight="150.0" fitWidth="200.0" layoutX="314.0" layoutY="14.0" onMouseClicked="#reversoA" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Img/reversoEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="r004" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="179.0" onMouseClicked="#reversoA" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Img/reversoEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="r005" fitHeight="150.0" fitWidth="200.0" layoutX="112.0" layoutY="179.0" onMouseClicked="#reversoA" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Img/reversoEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="r006" fitHeight="150.0" fitWidth="200.0" layoutX="214.0" layoutY="179.0" onMouseClicked="#reversoA" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Img/reversoEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="r007" fitHeight="150.0" fitWidth="200.0" layoutX="314.0" layoutY="179.0" onMouseClicked="#reversoA" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Img/reversoEspacio.png" />
-         </image>
-      </ImageView>
       <ImageView fitHeight="365.0" fitWidth="726.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Img/3660.jpg" />
@@ -70,45 +33,99 @@
             <Bloom />
          </effect>
       </Label>
-      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="14.0" layoutY="14.0">
-         <image>
-            <Image url="@../Img/reversoEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="112.0" layoutY="14.0">
-         <image>
-            <Image url="@../Img/reversoEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="214.0" layoutY="14.0">
-         <image>
-            <Image url="@../Img/reversoEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="314.0" layoutY="14.0">
-         <image>
-            <Image url="@../Img/reversoEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="14.0" layoutY="192.0">
-         <image>
-            <Image url="@../Img/reversoEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="112.0" layoutY="192.0">
-         <image>
-            <Image url="@../Img/reversoEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="214.0" layoutY="192.0">
-         <image>
-            <Image url="@../Img/reversoEspacio.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="83.0" layoutX="314.0" layoutY="192.0">
-         <image>
-            <Image url="@../Img/reversoEspacio.png" />
-         </image>
-      </ImageView>
+      <GridPane layoutX="-5.0" layoutY="6.0" prefHeight="346.0" prefWidth="422.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="c00" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#agujeroNegro1" pickOnBounds="true" preserveRatio="true" translateX="20.0">
+               <image>
+                  <Image url="@../Img/9E_cartaAgujeroNegro.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="c21" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#agujeroNegro2" pickOnBounds="true" preserveRatio="true" translateX="12.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Img/9E_cartaAgujeroNegro.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="r00" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#reverso00" pickOnBounds="true" preserveRatio="true" translateX="20.0">
+               <image>
+                  <Image url="@../Img/reversoEspacio.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="r21" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#reverso21" pickOnBounds="true" preserveRatio="true" translateX="12.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Img/reversoEspacio.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="c10" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#supernova10" pickOnBounds="true" preserveRatio="true" translateX="10.0" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../Img/10E_cartaSupernova.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="c11" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#supernova11" pickOnBounds="true" preserveRatio="true" translateX="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Img/10E_cartaSupernova.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="r10" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#reverso10" pickOnBounds="true" preserveRatio="true" translateX="10.0" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../Img/reversoEspacio.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="r11" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#reverso11" pickOnBounds="true" preserveRatio="true" translateX="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Img/reversoEspacio.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="c20" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#cuazar20" pickOnBounds="true" preserveRatio="true" translateX="10.0" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../Img/11E_cartaCuazar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="c30" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#cuazar30" pickOnBounds="true" preserveRatio="true" translateX="10.0" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../Img/11E_cartaCuazar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="r20" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#reverso20" pickOnBounds="true" preserveRatio="true" translateX="10.0" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../Img/reversoEspacio.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="r30" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#reverso30" pickOnBounds="true" preserveRatio="true" translateX="10.0" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../Img/reversoEspacio.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="c01" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#estrellaMarron01" pickOnBounds="true" preserveRatio="true" translateX="20.0" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Img/12E_cartaEstrellaMarrón.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="c31" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#estrellaMarron31" pickOnBounds="true" preserveRatio="true" translateX="10.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Img/12E_cartaEstrellaMarrón.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="r01" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#reverso01" pickOnBounds="true" preserveRatio="true" translateX="20.0" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Img/reversoEspacio.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="r31" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#reverso31" pickOnBounds="true" preserveRatio="true" translateX="10.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Img/reversoEspacio.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
    </children>
 </AnchorPane>
